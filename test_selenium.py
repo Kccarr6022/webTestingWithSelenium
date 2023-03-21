@@ -13,7 +13,7 @@ def random_string(length):
     return "".join(random.choice(letters) for i in range(length))
 
 
-# We are testing https://www.amazon.com/
+# We are testing https://www.amazon.com/ and https://the-internet.herokuapp.com/
 
 
 class TestSelenium:
