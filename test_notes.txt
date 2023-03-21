@@ -1,0 +1,2 @@
+driver.getwebhandles();
+// absolute xpath and relative xpath

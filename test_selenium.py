@@ -143,7 +143,7 @@ class TestSelenium:
 
         # drag and drop
         action = selenium.webdriver.ActionChains(the_internet_web_driver)
-        action.click_and_hold(box_a).move_to_element(box_b).release().perform()
+        action.drag_and_drop(box_a, box_b).perform()
 
         # assert the boxes are in the correct position
         assert box_a.text == "B"
@@ -154,6 +154,8 @@ class TestSelenium:
     
             # get the list of elements
             elements = the_internet_web_driver.find_elements(By.TAG_NAME, "a")
+            for element in elements:
+                print(element.text)
     
             # assert the list is not empty
             assert len(elements) > 0
